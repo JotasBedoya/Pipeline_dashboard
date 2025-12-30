@@ -1,0 +1,1377 @@
+[0m13:42:28.882801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280DCE44D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280DF015F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280DF0166B0>]}
+
+
+============================== 13:42:28.886631 | 05630b73-6183-4799-a11c-c9575cc68216 ==============================
+[0m13:42:28.886631 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:42:28.887134 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m13:42:28.904620 [info ] [MainThread]: dbt version: 1.11.2
+[0m13:42:28.905119 [info ] [MainThread]: python version: 3.10.0
+[0m13:42:28.905119 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m13:42:28.905119 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m13:42:28.906125 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 9
+  ------------------------------
+  6  |       threads: 1
+  7  |       schema: main
+  8  |       database: db
+  9  |       path: "D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\db.sqlite"
+  
+  Raw Error:
+  ------------------------------
+  while parsing a quoted scalar
+    in "<unicode string>", line 9, column 13
+  found unknown escape character
+    in "<unicode string>", line 9, column 16
+[0m13:42:28.907130 [debug] [MainThread]: Command `dbt debug` failed at 13:42:28.907130 after 0.13 seconds
+[0m13:42:28.907130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280DCE44D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280DF0CA500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280DF0CA4D0>]}
+[0m13:42:28.907631 [debug] [MainThread]: Flushing usage events
+[0m13:42:29.315018 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:44:09.608048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D1E44D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D40DBBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D40DBA00>]}
+
+
+============================== 13:44:09.611046 | 886b3239-b606-4a6b-bf74-4484e14bc8ce ==============================
+[0m13:44:09.611046 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:44:09.611546 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m13:44:09.626406 [info ] [MainThread]: dbt version: 1.11.2
+[0m13:44:09.626906 [info ] [MainThread]: python version: 3.10.0
+[0m13:44:09.626906 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m13:44:09.627409 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m13:44:09.650370 [info ] [MainThread]: Using profiles dir at C:\Users\Usuario\.dbt
+[0m13:44:09.650870 [info ] [MainThread]: Using profiles.yml file at C:\Users\Usuario\.dbt\profiles.yml
+[0m13:44:09.651370 [info ] [MainThread]: Using dbt_project.yml file at D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\dbt_project.yml
+[0m13:44:09.738449 [info ] [MainThread]: Configuration:
+[0m13:44:09.738948 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:44:09.739448 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:44:09.739947 [info ] [MainThread]: Required dependencies:
+[0m13:44:09.740447 [debug] [MainThread]: Executing "git --help"
+[0m13:44:09.744647 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m13:44:09.745156 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:44:09.745156 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:44:09.746161 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "product_pipeline", target "dev" invalid: 'schemas_and_paths' is a required property
+
+
+[0m13:44:09.746669 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m13:44:09.747669 [debug] [MainThread]: Command `dbt debug` failed at 13:44:09.747669 after 0.22 seconds
+[0m13:44:09.748170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D1E44D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D3197340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D20F44F0>]}
+[0m13:44:09.748170 [debug] [MainThread]: Flushing usage events
+[0m13:44:10.177929 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:55:17.844976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8915E4D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8928A7BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8928A7A00>]}
+
+
+============================== 13:55:17.848479 | 0a8a2911-10b8-49b5-9dc6-877b865afed4 ==============================
+[0m13:55:17.848479 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:55:17.848984 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m13:55:17.862988 [info ] [MainThread]: dbt version: 1.11.2
+[0m13:55:17.863991 [info ] [MainThread]: python version: 3.10.0
+[0m13:55:17.864494 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m13:55:17.864994 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m13:55:17.881607 [info ] [MainThread]: Using profiles dir at C:\Users\Usuario\.dbt
+[0m13:55:17.882107 [info ] [MainThread]: Using profiles.yml file at C:\Users\Usuario\.dbt\profiles.yml
+[0m13:55:17.882607 [info ] [MainThread]: Using dbt_project.yml file at D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\dbt_project.yml
+[0m13:55:17.969188 [info ] [MainThread]: Configuration:
+[0m13:55:17.969668 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:55:17.970173 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:55:17.970673 [info ] [MainThread]: Required dependencies:
+[0m13:55:17.971672 [debug] [MainThread]: Executing "git --help"
+[0m13:55:18.037283 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:55:18.037782 [debug] [MainThread]: STDERR: "b''"
+[0m13:55:18.038284 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:55:18.038783 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:55:18.038783 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:55:18.039282 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "product_pipeline", target "dev" invalid: 'schemas_and_paths' is a required property
+
+
+[0m13:55:18.040282 [debug] [MainThread]: Command `dbt debug` failed at 13:55:18.040282 after 0.27 seconds
+[0m13:55:18.040282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8915E4D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E892848700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E89189E560>]}
+[0m13:55:18.040282 [debug] [MainThread]: Flushing usage events
+[0m13:55:18.594848 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:59:29.575315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DC5AE4D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DC7D77BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DC7D77A00>]}
+
+
+============================== 13:59:29.578392 | 82f564fe-a68b-4d1d-9367-7d0f9be288c6 ==============================
+[0m13:59:29.578392 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:59:29.578893 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m13:59:29.592534 [info ] [MainThread]: dbt version: 1.11.2
+[0m13:59:29.593035 [info ] [MainThread]: python version: 3.10.0
+[0m13:59:29.593035 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m13:59:29.593035 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m13:59:29.609061 [info ] [MainThread]: Using profiles dir at C:\Users\Usuario\.dbt
+[0m13:59:29.610060 [info ] [MainThread]: Using profiles.yml file at C:\Users\Usuario\.dbt\profiles.yml
+[0m13:59:29.610563 [info ] [MainThread]: Using dbt_project.yml file at D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\dbt_project.yml
+[0m13:59:29.693209 [info ] [MainThread]: Configuration:
+[0m13:59:29.694211 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:59:29.694714 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:59:29.695215 [info ] [MainThread]: Required dependencies:
+[0m13:59:29.695718 [debug] [MainThread]: Executing "git --help"
+[0m13:59:29.720242 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:59:29.720745 [debug] [MainThread]: STDERR: "b''"
+[0m13:59:29.721244 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:59:29.721742 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:59:29.721742 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:59:29.722243 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "product_pipeline", target "dev" invalid: 'schemas_and_paths' is a required property
+
+
+[0m13:59:29.723249 [debug] [MainThread]: Command `dbt debug` failed at 13:59:29.722243 after 0.22 seconds
+[0m13:59:29.723249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DC5AE4D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DC6E37340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DC5D944F0>]}
+[0m13:59:29.723249 [debug] [MainThread]: Flushing usage events
+[0m13:59:30.157833 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:00:52.854156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF7A24D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF9CB7BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF9CB79D0>]}
+
+
+============================== 14:00:52.857228 | aee95c6c-043b-4296-9fbe-2ff528e828ec ==============================
+[0m14:00:52.857228 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:00:52.857728 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:00:52.872150 [info ] [MainThread]: dbt version: 1.11.2
+[0m14:00:52.872648 [info ] [MainThread]: python version: 3.10.0
+[0m14:00:52.873147 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m14:00:52.873147 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m14:00:52.891671 [info ] [MainThread]: Using profiles dir at C:\Users\Usuario\.dbt
+[0m14:00:52.892172 [info ] [MainThread]: Using profiles.yml file at C:\Users\Usuario\.dbt\profiles.yml
+[0m14:00:52.892673 [info ] [MainThread]: Using dbt_project.yml file at D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\dbt_project.yml
+[0m14:00:52.976754 [info ] [MainThread]: Configuration:
+[0m14:00:52.977755 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m14:00:52.977755 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:00:52.978257 [info ] [MainThread]: Required dependencies:
+[0m14:00:52.978755 [debug] [MainThread]: Executing "git --help"
+[0m14:00:53.003288 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:00:53.003793 [debug] [MainThread]: STDERR: "b''"
+[0m14:00:53.004292 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:00:53.004292 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:00:53.004794 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:00:53.005294 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "product_pipeline", target "dev" invalid: 'schemas_and_paths' is a required property
+
+
+[0m14:00:53.006293 [debug] [MainThread]: Command `dbt debug` failed at 14:00:53.006293 after 0.22 seconds
+[0m14:00:53.006793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF7A24D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF8D76F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF9BF7EE0>]}
+[0m14:00:53.007294 [debug] [MainThread]: Flushing usage events
+[0m14:00:53.462941 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:04:44.134741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D2D14D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D4EE5FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D4EE66E0>]}
+
+
+============================== 14:04:44.138741 | 93e0da98-9f74-435f-ae1f-c7ccc4f9c78d ==============================
+[0m14:04:44.138741 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:04:44.139240 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:04:44.153253 [info ] [MainThread]: dbt version: 1.11.2
+[0m14:04:44.153253 [info ] [MainThread]: python version: 3.10.0
+[0m14:04:44.154258 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m14:04:44.154764 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m14:04:44.155765 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 9
+  ------------------------------
+  6  |       threads: 1
+  7  |       schema: main
+  8  |       database: db
+  9  |       path: "D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\db.sqlite"
+  
+  Raw Error:
+  ------------------------------
+  while parsing a quoted scalar
+    in "<unicode string>", line 9, column 13
+  found unknown escape character
+    in "<unicode string>", line 9, column 16
+[0m14:04:44.156263 [debug] [MainThread]: Command `dbt debug` failed at 14:04:44.156263 after 0.04 seconds
+[0m14:04:44.156764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D2D14D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D4F9A530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D4F9A500>]}
+[0m14:04:44.156764 [debug] [MainThread]: Flushing usage events
+[0m14:04:44.525935 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:07:49.826743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC32A4D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC5537BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC55379D0>]}
+
+
+============================== 14:07:49.829740 | acc313da-6038-4ea1-bc16-c428d7f161fd ==============================
+[0m14:07:49.829740 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:07:49.830240 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:07:49.844259 [info ] [MainThread]: dbt version: 1.11.2
+[0m14:07:49.844765 [info ] [MainThread]: python version: 3.10.0
+[0m14:07:49.845266 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m14:07:49.845266 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m14:07:49.861270 [info ] [MainThread]: Using profiles dir at C:\Users\Usuario\.dbt
+[0m14:07:49.861770 [info ] [MainThread]: Using profiles.yml file at C:\Users\Usuario\.dbt\profiles.yml
+[0m14:07:49.862272 [info ] [MainThread]: Using dbt_project.yml file at D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\dbt_project.yml
+[0m14:07:49.948357 [info ] [MainThread]: Configuration:
+[0m14:07:49.948857 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m14:07:49.949358 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:07:49.949860 [info ] [MainThread]: Required dependencies:
+[0m14:07:49.950358 [debug] [MainThread]: Executing "git --help"
+[0m14:07:49.977901 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:07:50.030963 [debug] [MainThread]: STDERR: "b''"
+[0m14:07:50.031971 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:07:50.032469 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:07:50.032969 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:07:50.032969 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "product_pipeline", target "dev" invalid: 'schemas_and_paths' is a required property
+
+
+[0m14:07:50.034482 [debug] [MainThread]: Command `dbt debug` failed at 14:07:50.034482 after 0.28 seconds
+[0m14:07:50.034980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC32A4D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC45FAF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC5477EE0>]}
+[0m14:07:50.035480 [debug] [MainThread]: Flushing usage events
+[0m14:07:50.410435 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:08:44.733142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D1D4F4D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D1F787BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D1F787A00>]}
+
+
+============================== 14:08:44.736154 | f95857d0-6649-40c1-83ac-ea83020f983e ==============================
+[0m14:08:44.736154 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:08:44.737154 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:08:44.751573 [info ] [MainThread]: dbt version: 1.11.2
+[0m14:08:44.752072 [info ] [MainThread]: python version: 3.10.0
+[0m14:08:44.752072 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m14:08:44.752572 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m14:08:44.769100 [info ] [MainThread]: Using profiles dir at C:\Users\Usuario\.dbt
+[0m14:08:44.769601 [info ] [MainThread]: Using profiles.yml file at C:\Users\Usuario\.dbt\profiles.yml
+[0m14:08:44.770099 [info ] [MainThread]: Using dbt_project.yml file at D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\dbt_project.yml
+[0m14:08:44.856178 [info ] [MainThread]: Configuration:
+[0m14:08:44.856679 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m14:08:44.857180 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:08:44.857681 [info ] [MainThread]: Required dependencies:
+[0m14:08:44.858184 [debug] [MainThread]: Executing "git --help"
+[0m14:08:44.883202 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:08:44.884207 [debug] [MainThread]: STDERR: "b''"
+[0m14:08:44.884714 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:08:44.885212 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:08:44.885713 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:08:44.885713 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "product_pipeline", target "dev" invalid: 'schemas_and_paths' is a required property
+
+
+[0m14:08:44.886714 [debug] [MainThread]: Command `dbt debug` failed at 14:08:44.886714 after 0.23 seconds
+[0m14:08:44.887212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D1D4F4D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D1E84B340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D1E7744F0>]}
+[0m14:08:44.887714 [debug] [MainThread]: Flushing usage events
+[0m14:08:45.317177 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:11:38.000980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C095D64D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C098007BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C098007A00>]}
+
+
+============================== 14:11:38.004994 | aaa51a92-c03f-414c-befb-bcf13e1c9e28 ==============================
+[0m14:11:38.004994 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:11:38.005493 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:11:38.076508 [info ] [MainThread]: dbt version: 1.11.2
+[0m14:11:38.077007 [info ] [MainThread]: python version: 3.10.0
+[0m14:11:38.077007 [info ] [MainThread]: python path: C:\Users\Usuario\AppData\Local\Programs\Python\Python310\python.exe
+[0m14:11:38.077510 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m14:11:38.096032 [info ] [MainThread]: Using profiles dir at C:\Users\Usuario\.dbt
+[0m14:11:38.097032 [info ] [MainThread]: Using profiles.yml file at C:\Users\Usuario\.dbt\profiles.yml
+[0m14:11:38.097533 [info ] [MainThread]: Using dbt_project.yml file at D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\dbt_project.yml
+[0m14:11:38.098532 [info ] [MainThread]: adapter type: sqlite
+[0m14:11:38.099032 [info ] [MainThread]: adapter version: 1.10.0
+[0m14:11:38.184233 [info ] [MainThread]: Configuration:
+[0m14:11:38.184736 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:11:38.185238 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:11:38.185738 [info ] [MainThread]: Required dependencies:
+[0m14:11:38.186238 [debug] [MainThread]: Executing "git --help"
+[0m14:11:38.211761 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:11:38.212263 [debug] [MainThread]: STDERR: "b''"
+[0m14:11:38.212759 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:11:38.212759 [info ] [MainThread]: Connection:
+[0m14:11:38.213261 [info ] [MainThread]:   database: db
+[0m14:11:38.213261 [info ] [MainThread]:   schema: main
+[0m14:11:38.214265 [info ] [MainThread]:   schemas_and_paths: {'main': 'D:/Documents/Professional Profile/Pipeline/analytics-engineering-product-pipeline/db.sqlite'}
+[0m14:11:38.214265 [info ] [MainThread]:   schema_directory: D:/Documents/Professional Profile/Pipeline/analytics-engineering-product-pipeline
+[0m14:11:38.215272 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m14:11:38.367966 [debug] [MainThread]: Acquiring new sqlite connection 'debug'
+[0m14:11:40.451980 [debug] [MainThread]: Using sqlite connection "debug"
+[0m14:11:40.452479 [debug] [MainThread]: On debug: select 1 as id
+[0m14:11:40.452978 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:11:40.500618 [debug] [MainThread]: SQL status: OK in 0.048 seconds
+[0m14:11:40.501622 [debug] [MainThread]: On debug: Close
+[0m14:11:40.502123 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:11:40.502621 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:11:40.503120 [debug] [MainThread]: Command `dbt debug` succeeded at 14:11:40.503120 after 2.58 seconds
+[0m14:11:40.504124 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:11:40.504124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C095D64D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C097F45AB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C0981B28F0>]}
+[0m14:11:40.504629 [debug] [MainThread]: Flushing usage events
+[0m14:11:40.926015 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:32:47.846629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F57D4D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F7A67D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F7A67B20>]}
+
+
+============================== 14:32:47.850627 | 9b038eae-e144-4b5c-8a8d-8317ae0d8ba5 ==============================
+[0m14:32:47.850627 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:32:47.851127 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:32:48.008540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F7B5B430>]}
+[0m14:32:48.061596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F7197FD0>]}
+[0m14:32:48.063094 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m14:32:48.231056 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m14:32:48.232056 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:32:48.232556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F7BFF7F0>]}
+[0m14:32:49.975878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F930EA40>]}
+[0m14:32:50.042422 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\manifest.json
+[0m14:32:50.044433 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\semantic_manifest.json
+[0m14:32:50.082365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F93B2320>]}
+[0m14:32:50.082865 [info ] [MainThread]: Found 2 models, 4 data tests, 416 macros
+[0m14:32:50.082865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F93B23E0>]}
+[0m14:32:50.085375 [info ] [MainThread]: 
+[0m14:32:50.085875 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:32:50.085875 [info ] [MainThread]: 
+[0m14:32:50.086377 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m14:32:50.091879 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_db'
+[0m14:32:50.175244 [debug] [ThreadPool]: Using sqlite connection "list_db"
+[0m14:32:50.175744 [debug] [ThreadPool]: On list_db: BEGIN
+[0m14:32:50.175744 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:32:50.176744 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:32:50.176744 [debug] [ThreadPool]: Using sqlite connection "list_db"
+[0m14:32:50.176744 [debug] [ThreadPool]: On list_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db"} */
+
+        pragma database_list
+    
+[0m14:32:50.178035 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:32:50.179165 [debug] [ThreadPool]: On list_db: ROLLBACK
+[0m14:32:50.179165 [debug] [ThreadPool]: On list_db: Close
+[0m14:32:50.180670 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_db_main'
+[0m14:32:50.186182 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m14:32:50.186182 [debug] [ThreadPool]: On list_db_main: BEGIN
+[0m14:32:50.186682 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:32:50.187182 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:32:50.187182 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m14:32:50.187681 [debug] [ThreadPool]: On list_db_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db_main"} */
+
+        pragma database_list
+    
+[0m14:32:50.187681 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:32:50.188681 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m14:32:50.189182 [debug] [ThreadPool]: On list_db_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db_main"} */
+
+            SELECT
+                'db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m14:32:50.189182 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:32:50.190181 [debug] [ThreadPool]: On list_db_main: ROLLBACK
+[0m14:32:50.190181 [debug] [ThreadPool]: On list_db_main: Close
+[0m14:32:50.191183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F92E0C70>]}
+[0m14:32:50.191683 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:32:50.191683 [debug] [MainThread]: On master: BEGIN
+[0m14:32:50.192183 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:32:50.192183 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:32:50.192685 [debug] [MainThread]: On master: COMMIT
+[0m14:32:50.192685 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:32:50.193184 [debug] [MainThread]: On master: COMMIT
+[0m14:32:50.193184 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:32:50.193184 [debug] [MainThread]: On master: Close
+[0m14:32:50.219222 [debug] [Thread-1 (]: Began running node model.product_pipeline.my_first_dbt_model
+[0m14:32:50.219724 [info ] [Thread-1 (]: 1 of 2 START sql table model main.my_first_dbt_model ........................... [RUN]
+[0m14:32:50.220221 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.product_pipeline.my_first_dbt_model'
+[0m14:32:50.220721 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.my_first_dbt_model
+[0m14:32:50.226226 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.my_first_dbt_model"
+[0m14:32:50.268649 [debug] [Thread-1 (]: Began executing node model.product_pipeline.my_first_dbt_model
+[0m14:32:50.280741 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.my_first_dbt_model"
+[0m14:32:50.281747 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.my_first_dbt_model"
+[0m14:32:50.282248 [debug] [Thread-1 (]: On model.product_pipeline.my_first_dbt_model: BEGIN
+[0m14:32:50.282248 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:32:50.282747 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:32:50.282747 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.my_first_dbt_model"
+[0m14:32:50.282747 [debug] [Thread-1 (]: On model.product_pipeline.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.my_first_dbt_model"} */
+
+  
+    
+    
+    create  table main."my_first_dbt_model"
+    as
+        /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+
+  
+[0m14:32:50.284462 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:32:50.288472 [debug] [Thread-1 (]: On model.product_pipeline.my_first_dbt_model: COMMIT
+[0m14:32:50.288472 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.my_first_dbt_model"
+[0m14:32:50.288973 [debug] [Thread-1 (]: On model.product_pipeline.my_first_dbt_model: COMMIT
+[0m14:32:50.293763 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m14:32:50.296769 [debug] [Thread-1 (]: On model.product_pipeline.my_first_dbt_model: Close
+[0m14:32:50.298269 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F9143EB0>]}
+[0m14:32:50.299269 [info ] [Thread-1 (]: 1 of 2 OK created sql table model main.my_first_dbt_model ...................... [[32mOK[0m in 0.08s]
+[0m14:32:50.299768 [debug] [Thread-1 (]: Finished running node model.product_pipeline.my_first_dbt_model
+[0m14:32:50.300769 [debug] [Thread-1 (]: Began running node model.product_pipeline.my_second_dbt_model
+[0m14:32:50.301268 [info ] [Thread-1 (]: 2 of 2 START sql view model main.my_second_dbt_model ........................... [RUN]
+[0m14:32:50.301767 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.my_first_dbt_model, now model.product_pipeline.my_second_dbt_model)
+[0m14:32:50.302269 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.my_second_dbt_model
+[0m14:32:50.305783 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.my_second_dbt_model"
+[0m14:32:50.306783 [debug] [Thread-1 (]: Began executing node model.product_pipeline.my_second_dbt_model
+[0m14:32:50.315787 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.my_second_dbt_model"
+[0m14:32:50.316287 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.my_second_dbt_model"
+[0m14:32:50.316788 [debug] [Thread-1 (]: On model.product_pipeline.my_second_dbt_model: BEGIN
+[0m14:32:50.317287 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:32:50.318291 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:32:50.318798 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.my_second_dbt_model"
+[0m14:32:50.318798 [debug] [Thread-1 (]: On model.product_pipeline.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.my_second_dbt_model"} */
+
+    
+    create view main."my_second_dbt_model" as
+    -- Use the `ref` function to select from other models
+
+select *
+from main."my_first_dbt_model"
+where id = 1;
+[0m14:32:50.319801 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:32:50.320300 [debug] [Thread-1 (]: On model.product_pipeline.my_second_dbt_model: COMMIT
+[0m14:32:50.320799 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.my_second_dbt_model"
+[0m14:32:50.320799 [debug] [Thread-1 (]: On model.product_pipeline.my_second_dbt_model: COMMIT
+[0m14:32:50.322434 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:32:50.322934 [debug] [Thread-1 (]: On model.product_pipeline.my_second_dbt_model: Close
+[0m14:32:50.322934 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b038eae-e144-4b5c-8a8d-8317ae0d8ba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F814F640>]}
+[0m14:32:50.323940 [info ] [Thread-1 (]: 2 of 2 OK created sql view model main.my_second_dbt_model ...................... [[32mOK[0m in 0.02s]
+[0m14:32:50.324945 [debug] [Thread-1 (]: Finished running node model.product_pipeline.my_second_dbt_model
+[0m14:32:50.325945 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:32:50.326447 [debug] [MainThread]: On master: BEGIN
+[0m14:32:50.326946 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:32:50.328444 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:32:50.328444 [debug] [MainThread]: On master: COMMIT
+[0m14:32:50.328444 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:32:50.328943 [debug] [MainThread]: On master: COMMIT
+[0m14:32:50.328943 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:32:50.329445 [debug] [MainThread]: On master: Close
+[0m14:32:50.329445 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:32:50.329944 [debug] [MainThread]: Connection 'list_db' was properly closed.
+[0m14:32:50.329944 [debug] [MainThread]: Connection 'list_db_main' was properly closed.
+[0m14:32:50.330444 [debug] [MainThread]: Connection 'model.product_pipeline.my_second_dbt_model' was properly closed.
+[0m14:32:50.330444 [info ] [MainThread]: 
+[0m14:32:50.330945 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.24 seconds (0.24s).
+[0m14:32:50.331446 [debug] [MainThread]: Command end result
+[0m14:32:50.345956 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\manifest.json
+[0m14:32:50.347456 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\semantic_manifest.json
+[0m14:32:50.352956 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\run_results.json
+[0m14:32:50.352956 [info ] [MainThread]: 
+[0m14:32:50.352956 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:32:50.353962 [info ] [MainThread]: 
+[0m14:32:50.353962 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m14:32:50.354468 [debug] [MainThread]: Command `dbt run` succeeded at 14:32:50.354468 after 2.58 seconds
+[0m14:32:50.354468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F57D4D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F806A6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F8069570>]}
+[0m14:32:50.355982 [debug] [MainThread]: Flushing usage events
+[0m14:32:50.704759 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:42:49.336080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE807E4D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE82B7BD00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE82B7BB20>]}
+
+
+============================== 14:42:49.339581 | 7bf71735-7157-462f-9bde-eada04ac2519 ==============================
+[0m14:42:49.339581 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:42:49.340082 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:42:49.466794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE82C73430>]}
+[0m14:42:49.518832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE821A7FD0>]}
+[0m14:42:49.520334 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m14:42:49.668507 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m14:42:49.802218 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 4 files added, 0 files changed.
+[0m14:42:49.802719 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\staging\stg_orders.sql
+[0m14:42:49.803219 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\staging\stg_products.sql
+[0m14:42:49.803219 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\sources.yml
+[0m14:42:49.803719 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\staging\stg_customers.sql
+[0m14:42:49.803719 [debug] [MainThread]: Partial parsing: deleted file: product_pipeline://models\example\my_first_dbt_model.sql
+[0m14:42:49.803719 [debug] [MainThread]: Partial parsing: deleted file: product_pipeline://models\example\my_second_dbt_model.sql
+[0m14:42:50.134611 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.product_pipeline.example
+[0m14:42:50.143122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE843521A0>]}
+[0m14:42:50.200699 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\manifest.json
+[0m14:42:50.202701 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\semantic_manifest.json
+[0m14:42:50.221379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE830E4880>]}
+[0m14:42:50.222379 [info ] [MainThread]: Found 3 models, 5 sources, 416 macros
+[0m14:42:50.222879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE830E6BF0>]}
+[0m14:42:50.224892 [info ] [MainThread]: 
+[0m14:42:50.225389 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:42:50.225890 [info ] [MainThread]: 
+[0m14:42:50.226391 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m14:42:50.231890 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_db'
+[0m14:42:50.277387 [debug] [ThreadPool]: Using sqlite connection "list_db"
+[0m14:42:50.277887 [debug] [ThreadPool]: On list_db: BEGIN
+[0m14:42:50.277887 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:42:50.278886 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:42:50.278886 [debug] [ThreadPool]: Using sqlite connection "list_db"
+[0m14:42:50.279386 [debug] [ThreadPool]: On list_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db"} */
+
+        pragma database_list
+    
+[0m14:42:50.279386 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:42:50.280386 [debug] [ThreadPool]: On list_db: ROLLBACK
+[0m14:42:50.280886 [debug] [ThreadPool]: On list_db: Close
+[0m14:42:50.281887 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_db_main'
+[0m14:42:50.287393 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m14:42:50.287893 [debug] [ThreadPool]: On list_db_main: BEGIN
+[0m14:42:50.287893 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:42:50.288393 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:42:50.288894 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m14:42:50.288894 [debug] [ThreadPool]: On list_db_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db_main"} */
+
+        pragma database_list
+    
+[0m14:42:50.289393 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:42:50.290393 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m14:42:50.290393 [debug] [ThreadPool]: On list_db_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db_main"} */
+
+            SELECT
+                'db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m14:42:50.290894 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:42:50.291393 [debug] [ThreadPool]: On list_db_main: ROLLBACK
+[0m14:42:50.291893 [debug] [ThreadPool]: On list_db_main: Close
+[0m14:42:50.292893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE83170850>]}
+[0m14:42:50.293394 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:42:50.293394 [debug] [MainThread]: On master: BEGIN
+[0m14:42:50.293394 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:42:50.293394 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:42:50.294396 [debug] [MainThread]: On master: COMMIT
+[0m14:42:50.294396 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:42:50.294899 [debug] [MainThread]: On master: COMMIT
+[0m14:42:50.294899 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:42:50.294899 [debug] [MainThread]: On master: Close
+[0m14:42:50.297400 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_customers
+[0m14:42:50.297899 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_customers ................................. [RUN]
+[0m14:42:50.298400 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.product_pipeline.stg_customers'
+[0m14:42:50.298400 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_customers
+[0m14:42:50.305907 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_customers"
+[0m14:42:50.306905 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_customers
+[0m14:42:50.317909 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_customers"
+[0m14:42:50.318910 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m14:42:50.319412 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: BEGIN
+[0m14:42:50.319412 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:42:50.319911 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:42:50.320410 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m14:42:50.320410 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_customers"} */
+
+    
+    create view main."stg_customers" as
+    select
+  customer_id,
+  customer_name,
+  country,
+  region
+from main."raw_dim_customers";
+[0m14:42:50.373394 [debug] [Thread-1 (]: SQL status: OK in 0.053 seconds
+[0m14:42:50.379403 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: COMMIT
+[0m14:42:50.379902 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m14:42:50.380403 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: COMMIT
+[0m14:42:50.388547 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m14:42:50.391047 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: Close
+[0m14:42:50.392547 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CEFEC03D30>]}
+[0m14:42:50.393047 [info ] [Thread-1 (]: 1 of 3 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.09s]
+[0m14:42:50.393547 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_customers
+[0m14:42:50.393547 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_orders
+[0m14:42:50.394551 [info ] [Thread-1 (]: 2 of 3 START sql view model main.stg_orders .................................... [RUN]
+[0m14:42:50.395558 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.stg_customers, now model.product_pipeline.stg_orders)
+[0m14:42:50.396057 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_orders
+[0m14:42:50.398555 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_orders"
+[0m14:42:50.399055 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_orders
+[0m14:42:50.401056 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_orders"
+[0m14:42:50.401555 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m14:42:50.402057 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: BEGIN
+[0m14:42:50.402057 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:42:50.403555 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:42:50.403555 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m14:42:50.403555 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_orders"} */
+
+    
+    create view main."stg_orders" as
+    select
+  order_id,
+  customer_id,
+  product_id,
+  date(order_date) as order_date,
+  quantity,
+  revenue,
+  cogs,
+  margin
+from main."raw_fact_orders";
+[0m14:42:50.405066 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:42:50.406072 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: COMMIT
+[0m14:42:50.406072 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m14:42:50.406571 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: COMMIT
+[0m14:42:50.407800 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:42:50.408301 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: Close
+[0m14:42:50.408801 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE8433F8B0>]}
+[0m14:42:50.409301 [info ] [Thread-1 (]: 2 of 3 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.01s]
+[0m14:42:50.410300 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_orders
+[0m14:42:50.410800 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_products
+[0m14:42:50.411300 [info ] [Thread-1 (]: 3 of 3 START sql view model main.stg_products .................................. [RUN]
+[0m14:42:50.411800 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.stg_orders, now model.product_pipeline.stg_products)
+[0m14:42:50.411800 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_products
+[0m14:42:50.413799 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_products"
+[0m14:42:50.414801 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_products
+[0m14:42:50.416805 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_products"
+[0m14:42:50.417805 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m14:42:50.417805 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: BEGIN
+[0m14:42:50.418304 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:42:50.419304 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:42:50.419806 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m14:42:50.419806 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_products"} */
+
+    
+    create view main."stg_products" as
+    select
+    product_id,
+    product_name,
+    brand,
+    category,
+    unit_cost,
+    unit_price
+from main."raw_dim_products";
+[0m14:42:50.420806 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:42:50.421306 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: COMMIT
+[0m14:42:50.421806 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m14:42:50.422306 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: COMMIT
+[0m14:42:50.423603 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:42:50.424608 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: Close
+[0m14:42:50.425114 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7bf71735-7157-462f-9bde-eada04ac2519', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CEFEC03D30>]}
+[0m14:42:50.426119 [info ] [Thread-1 (]: 3 of 3 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.01s]
+[0m14:42:50.426619 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_products
+[0m14:42:50.428118 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:42:50.428619 [debug] [MainThread]: On master: BEGIN
+[0m14:42:50.428619 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:42:50.430118 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:42:50.430118 [debug] [MainThread]: On master: COMMIT
+[0m14:42:50.430622 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:42:50.430622 [debug] [MainThread]: On master: COMMIT
+[0m14:42:50.431121 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:42:50.431121 [debug] [MainThread]: On master: Close
+[0m14:42:50.431620 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:42:50.431620 [debug] [MainThread]: Connection 'list_db' was properly closed.
+[0m14:42:50.432120 [debug] [MainThread]: Connection 'list_db_main' was properly closed.
+[0m14:42:50.432120 [debug] [MainThread]: Connection 'model.product_pipeline.stg_products' was properly closed.
+[0m14:42:50.432120 [info ] [MainThread]: 
+[0m14:42:50.432621 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 0.21 seconds (0.21s).
+[0m14:42:50.433619 [debug] [MainThread]: Command end result
+[0m14:42:50.449135 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\manifest.json
+[0m14:42:50.450638 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\semantic_manifest.json
+[0m14:42:50.455644 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\run_results.json
+[0m14:42:50.456144 [info ] [MainThread]: 
+[0m14:42:50.456645 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:42:50.457144 [info ] [MainThread]: 
+[0m14:42:50.457645 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:42:50.458147 [debug] [MainThread]: Command `dbt run` succeeded at 14:42:50.458147 after 1.20 seconds
+[0m14:42:50.458649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE807E4D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE83170850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE84345D80>]}
+[0m14:42:50.459148 [debug] [MainThread]: Flushing usage events
+[0m14:42:50.833476 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:56:27.419629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023815DB8D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023818047C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023818047A30>]}
+
+
+============================== 14:56:27.422481 | 0e8c417f-f945-403d-b880-82e4033ec31b ==============================
+[0m14:56:27.422481 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:56:27.422481 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:56:27.554613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e8c417f-f945-403d-b880-82e4033ec31b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023818143790>]}
+[0m14:56:27.608157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e8c417f-f945-403d-b880-82e4033ec31b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023817DBCDC0>]}
+[0m14:56:27.609657 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m14:56:27.762372 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m14:56:27.885268 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:56:27.885758 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\intermediate\int_orders_enriched.sql
+[0m14:56:28.039932 [error] [MainThread]: Encountered an error:
+Compilation Error in model int_orders_enriched (models\intermediate\int_orders_enriched.sql)
+  The name argument to ref() must be a string, got <class 'dbt_common.clients.jinja.create_undefined.<locals>.Undefined'>
+  
+  > in macro ref (macros\core_overrides.sql)
+  > called by model int_orders_enriched (models\intermediate\int_orders_enriched.sql)
+[0m14:56:28.040931 [debug] [MainThread]: Command `dbt run` failed at 14:56:28.040931 after 0.69 seconds
+[0m14:56:28.041932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023815DB8D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238185C5060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002381861BE50>]}
+[0m14:56:28.042433 [debug] [MainThread]: Flushing usage events
+[0m14:56:28.459115 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:57:45.413886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017907D44D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017909FDBCA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017909FDBAC0>]}
+
+
+============================== 14:57:45.417387 | 4b72bd08-3098-4247-9697-cf4a2e4b74fa ==============================
+[0m14:57:45.417387 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:57:45.418388 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m14:57:45.551584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4b72bd08-3098-4247-9697-cf4a2e4b74fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001790A0D7190>]}
+[0m14:57:45.607665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4b72bd08-3098-4247-9697-cf4a2e4b74fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017909703D60>]}
+[0m14:57:45.609165 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m14:57:45.767846 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m14:57:45.867418 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:57:45.867918 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\intermediate\int_orders_enriched.sql
+[0m14:57:46.034076 [error] [MainThread]: Encountered an error:
+Compilation Error in model int_orders_enriched (models\intermediate\int_orders_enriched.sql)
+  The name argument to ref() must be a string, got <class 'dbt_common.clients.jinja.create_undefined.<locals>.Undefined'>
+  
+  > in macro ref (macros\core_overrides.sql)
+  > called by model int_orders_enriched (models\intermediate\int_orders_enriched.sql)
+[0m14:57:46.035577 [debug] [MainThread]: Command `dbt run` failed at 14:57:46.035577 after 0.69 seconds
+[0m14:57:46.036078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017907D44D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001790A550FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001790A5ABE50>]}
+[0m14:57:46.036575 [debug] [MainThread]: Flushing usage events
+[0m14:57:46.441834 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:02:12.762668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9732B4D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97554BCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97554BAF0>]}
+
+
+============================== 15:02:12.765680 | 2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5 ==============================
+[0m15:02:12.765680 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:02:12.766187 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m15:02:12.886782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97563B160>]}
+[0m15:02:12.937312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F974C73EE0>]}
+[0m15:02:12.938312 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m15:02:13.086521 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:02:13.199308 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m15:02:13.199808 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\intermediate\int_orders_enriched.sql
+[0m15:02:13.199808 [debug] [MainThread]: Partial parsing: updated file: product_pipeline://models\staging\stg_products.sql
+[0m15:02:13.399711 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.product_pipeline.example
+[0m15:02:13.442735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F975AE8400>]}
+[0m15:02:13.504280 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\manifest.json
+[0m15:02:13.506781 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\semantic_manifest.json
+[0m15:02:13.525854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F975AC83A0>]}
+[0m15:02:13.526353 [info ] [MainThread]: Found 4 models, 5 sources, 416 macros
+[0m15:02:13.526853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97552FBE0>]}
+[0m15:02:13.528353 [info ] [MainThread]: 
+[0m15:02:13.528853 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:02:13.529353 [info ] [MainThread]: 
+[0m15:02:13.529853 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m15:02:13.534859 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_db'
+[0m15:02:13.578708 [debug] [ThreadPool]: Using sqlite connection "list_db"
+[0m15:02:13.579208 [debug] [ThreadPool]: On list_db: BEGIN
+[0m15:02:13.579708 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:02:13.580208 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:02:13.580208 [debug] [ThreadPool]: Using sqlite connection "list_db"
+[0m15:02:13.580708 [debug] [ThreadPool]: On list_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db"} */
+
+        pragma database_list
+    
+[0m15:02:13.581208 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:02:13.582208 [debug] [ThreadPool]: On list_db: ROLLBACK
+[0m15:02:13.582208 [debug] [ThreadPool]: On list_db: Close
+[0m15:02:13.582708 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_db_main'
+[0m15:02:13.588719 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m15:02:13.589219 [debug] [ThreadPool]: On list_db_main: BEGIN
+[0m15:02:13.589219 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:02:13.589219 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:02:13.590221 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m15:02:13.590221 [debug] [ThreadPool]: On list_db_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db_main"} */
+
+        pragma database_list
+    
+[0m15:02:13.590724 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:02:13.591724 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m15:02:13.591724 [debug] [ThreadPool]: On list_db_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db_main"} */
+
+            SELECT
+                'db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m15:02:13.592224 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:02:13.592725 [debug] [ThreadPool]: On list_db_main: ROLLBACK
+[0m15:02:13.592725 [debug] [ThreadPool]: On list_db_main: Close
+[0m15:02:13.594983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F975A9A110>]}
+[0m15:02:13.594983 [debug] [MainThread]: Using sqlite connection "master"
+[0m15:02:13.595490 [debug] [MainThread]: On master: BEGIN
+[0m15:02:13.595490 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:02:13.595990 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:02:13.595990 [debug] [MainThread]: On master: COMMIT
+[0m15:02:13.596490 [debug] [MainThread]: Using sqlite connection "master"
+[0m15:02:13.596490 [debug] [MainThread]: On master: COMMIT
+[0m15:02:13.596990 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:02:13.596990 [debug] [MainThread]: On master: Close
+[0m15:02:13.600199 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_customers
+[0m15:02:13.600699 [info ] [Thread-1 (]: 1 of 4 START sql view model main.stg_customers ................................. [RUN]
+[0m15:02:13.601202 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.product_pipeline.stg_customers'
+[0m15:02:13.601202 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_customers
+[0m15:02:13.608206 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_customers"
+[0m15:02:13.608706 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_customers
+[0m15:02:13.620216 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m15:02:13.620717 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_customers"} */
+drop view if exists "main"."stg_customers"
+[0m15:02:13.620717 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:02:13.642468 [debug] [Thread-1 (]: SQL status: OK in 0.022 seconds
+[0m15:02:13.646984 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_customers"
+[0m15:02:13.647984 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m15:02:13.648486 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: BEGIN
+[0m15:02:13.648486 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:02:13.648984 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m15:02:13.648984 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_customers"} */
+
+    
+    create view main."stg_customers" as
+    select
+  customer_id,
+  customer_name,
+  country,
+  region
+from main."raw_dim_customers";
+[0m15:02:13.649986 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:02:13.653491 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: COMMIT
+[0m15:02:13.653993 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m15:02:13.654493 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: COMMIT
+[0m15:02:13.655493 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:02:13.657995 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: Close
+[0m15:02:13.659495 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9756701F0>]}
+[0m15:02:13.659995 [info ] [Thread-1 (]: 1 of 4 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.06s]
+[0m15:02:13.660495 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_customers
+[0m15:02:13.661495 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_orders
+[0m15:02:13.662495 [info ] [Thread-1 (]: 2 of 4 START sql view model main.stg_orders .................................... [RUN]
+[0m15:02:13.662495 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.stg_customers, now model.product_pipeline.stg_orders)
+[0m15:02:13.662495 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_orders
+[0m15:02:13.665503 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_orders"
+[0m15:02:13.666503 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_orders
+[0m15:02:13.669502 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m15:02:13.670002 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_orders"} */
+drop view if exists "main"."stg_orders"
+[0m15:02:13.670002 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:02:13.672579 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:02:13.675087 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_orders"
+[0m15:02:13.676092 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m15:02:13.676593 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: BEGIN
+[0m15:02:13.677093 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:02:13.677093 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m15:02:13.677594 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_orders"} */
+
+    
+    create view main."stg_orders" as
+    select
+  order_id,
+  customer_id,
+  product_id,
+  date(order_date) as order_date,
+  quantity,
+  revenue,
+  cogs,
+  margin
+from main."raw_fact_orders";
+[0m15:02:13.678093 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:02:13.679093 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: COMMIT
+[0m15:02:13.679593 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m15:02:13.679593 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: COMMIT
+[0m15:02:13.681188 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:02:13.682189 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: Close
+[0m15:02:13.682689 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97709ECB0>]}
+[0m15:02:13.682689 [info ] [Thread-1 (]: 2 of 4 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.02s]
+[0m15:02:13.683693 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_orders
+[0m15:02:13.683693 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_products
+[0m15:02:13.684699 [info ] [Thread-1 (]: 3 of 4 START sql view model main.stg_products .................................. [RUN]
+[0m15:02:13.685205 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.stg_orders, now model.product_pipeline.stg_products)
+[0m15:02:13.685205 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_products
+[0m15:02:13.687702 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_products"
+[0m15:02:13.688203 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_products
+[0m15:02:13.691202 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m15:02:13.691702 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_products"} */
+drop view if exists "main"."stg_products"
+[0m15:02:13.691702 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:02:13.694713 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:02:13.696214 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_products"
+[0m15:02:13.696714 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m15:02:13.696714 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: BEGIN
+[0m15:02:13.697214 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:02:13.697214 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m15:02:13.697714 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_products"} */
+
+    
+    create view main."stg_products" as
+    select
+    product_id,
+    product_name,
+    brand,
+    category,
+    unit_cost,
+    unit_price
+from main."raw_dim_products";
+[0m15:02:13.698213 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:02:13.699214 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: COMMIT
+[0m15:02:13.699214 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m15:02:13.699714 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: COMMIT
+[0m15:02:13.700924 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:02:13.701425 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: Close
+[0m15:02:13.701925 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97570BC10>]}
+[0m15:02:13.702424 [info ] [Thread-1 (]: 3 of 4 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.02s]
+[0m15:02:13.702424 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_products
+[0m15:02:13.703935 [debug] [Thread-1 (]: Began running node model.product_pipeline.int_orders_enriched
+[0m15:02:13.704437 [info ] [Thread-1 (]: 4 of 4 START sql view model main.int_orders_enriched ........................... [RUN]
+[0m15:02:13.704937 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.stg_products, now model.product_pipeline.int_orders_enriched)
+[0m15:02:13.705437 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.int_orders_enriched
+[0m15:02:13.709936 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.int_orders_enriched"
+[0m15:02:13.710936 [debug] [Thread-1 (]: Began executing node model.product_pipeline.int_orders_enriched
+[0m15:02:13.712434 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.int_orders_enriched"
+[0m15:02:13.713437 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.int_orders_enriched"
+[0m15:02:13.713942 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: BEGIN
+[0m15:02:13.713942 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:02:13.715442 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:02:13.715939 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.int_orders_enriched"
+[0m15:02:13.715939 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.int_orders_enriched"} */
+
+    
+    create view main."int_orders_enriched" as
+    WITH orders AS (
+    SELECT * FROM main."stg_orders"
+),
+products as (
+    SELECT * FROM main."stg_products"
+),
+customers as (
+    SELECT * FROM main."stg_customers"
+)
+
+SELECT
+    o.order_id,
+    o.order_date,
+    o.customer_id,
+    c.customer_name,
+    c.country,
+    c.region,
+    o.product_id,
+    p.product_name,
+    p.brand,
+    p.category,
+    o.quantity,
+    o.revenue,
+    o.cogs,
+    o.margin
+FROM orders o
+LEFT JOIN customers c ON o.customer_id = c.customer_id
+LEFT JOIN products p ON o.product_id = p.product_id;
+[0m15:02:13.716940 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:02:13.717442 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: COMMIT
+[0m15:02:13.717942 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.int_orders_enriched"
+[0m15:02:13.717942 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: COMMIT
+[0m15:02:13.719852 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:02:13.720353 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: Close
+[0m15:02:13.720852 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c6a16ce-dfb0-434b-b2a2-fce4f2d7e9b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97570BC40>]}
+[0m15:02:13.721353 [info ] [Thread-1 (]: 4 of 4 OK created sql view model main.int_orders_enriched ...................... [[32mOK[0m in 0.02s]
+[0m15:02:13.721853 [debug] [Thread-1 (]: Finished running node model.product_pipeline.int_orders_enriched
+[0m15:02:13.723357 [debug] [MainThread]: Using sqlite connection "master"
+[0m15:02:13.723357 [debug] [MainThread]: On master: BEGIN
+[0m15:02:13.723865 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:02:13.725363 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:02:13.725363 [debug] [MainThread]: On master: COMMIT
+[0m15:02:13.725864 [debug] [MainThread]: Using sqlite connection "master"
+[0m15:02:13.725864 [debug] [MainThread]: On master: COMMIT
+[0m15:02:13.726363 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:02:13.726363 [debug] [MainThread]: On master: Close
+[0m15:02:13.726863 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:02:13.726863 [debug] [MainThread]: Connection 'list_db' was properly closed.
+[0m15:02:13.727363 [debug] [MainThread]: Connection 'list_db_main' was properly closed.
+[0m15:02:13.727363 [debug] [MainThread]: Connection 'model.product_pipeline.int_orders_enriched' was properly closed.
+[0m15:02:13.727363 [info ] [MainThread]: 
+[0m15:02:13.727863 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.20 seconds (0.20s).
+[0m15:02:13.728865 [debug] [MainThread]: Command end result
+[0m15:02:13.743876 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\manifest.json
+[0m15:02:13.745379 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\semantic_manifest.json
+[0m15:02:13.750376 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\run_results.json
+[0m15:02:13.750876 [info ] [MainThread]: 
+[0m15:02:13.750876 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:02:13.750876 [info ] [MainThread]: 
+[0m15:02:13.751883 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m15:02:13.752389 [debug] [MainThread]: Command `dbt run` succeeded at 15:02:13.752389 after 1.06 seconds
+[0m15:02:13.753404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9732B4D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97563B160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9754C5990>]}
+[0m15:02:13.753909 [debug] [MainThread]: Flushing usage events
+[0m15:02:14.182746 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:29.200985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A96E04D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A99097D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A99097B20>]}
+
+
+============================== 15:08:29.204987 | 710827c1-0ac5-4cb6-ab2e-475db0efb687 ==============================
+[0m15:08:29.204987 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:08:29.205487 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Usuario\\.dbt', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Documents\\Professional Profile\\Pipeline\\analytics-engineering-product-pipeline\\product_pipeline\\logs'}
+[0m15:08:29.332322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9918F970>]}
+[0m15:08:29.386406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A98798F70>]}
+[0m15:08:29.388914 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m15:08:29.538032 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:08:29.664653 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m15:08:29.665654 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\marts\dim_products.sql
+[0m15:08:29.665654 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\marts\dim_customers.sql
+[0m15:08:29.666154 [debug] [MainThread]: Partial parsing: added file: product_pipeline://models\marts\fact_sales.sql
+[0m15:08:29.908869 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.product_pipeline.example
+[0m15:08:29.921878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A995EB580>]}
+[0m15:08:29.984930 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\manifest.json
+[0m15:08:29.986434 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\semantic_manifest.json
+[0m15:08:30.004454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A99753C10>]}
+[0m15:08:30.004454 [info ] [MainThread]: Found 7 models, 5 sources, 416 macros
+[0m15:08:30.005455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9A7797B0>]}
+[0m15:08:30.007458 [info ] [MainThread]: 
+[0m15:08:30.007458 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:08:30.007962 [info ] [MainThread]: 
+[0m15:08:30.008462 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m15:08:30.013965 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_db'
+[0m15:08:30.058770 [debug] [ThreadPool]: Using sqlite connection "list_db"
+[0m15:08:30.058770 [debug] [ThreadPool]: On list_db: BEGIN
+[0m15:08:30.058770 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:08:30.059772 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:08:30.060276 [debug] [ThreadPool]: Using sqlite connection "list_db"
+[0m15:08:30.060276 [debug] [ThreadPool]: On list_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db"} */
+
+        pragma database_list
+    
+[0m15:08:30.060776 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:08:30.061775 [debug] [ThreadPool]: On list_db: ROLLBACK
+[0m15:08:30.062275 [debug] [ThreadPool]: On list_db: Close
+[0m15:08:30.063276 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_db_main'
+[0m15:08:30.070283 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m15:08:30.070283 [debug] [ThreadPool]: On list_db_main: BEGIN
+[0m15:08:30.070784 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:08:30.071283 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:08:30.071283 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m15:08:30.071784 [debug] [ThreadPool]: On list_db_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db_main"} */
+
+        pragma database_list
+    
+[0m15:08:30.071784 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:08:30.073284 [debug] [ThreadPool]: Using sqlite connection "list_db_main"
+[0m15:08:30.073284 [debug] [ThreadPool]: On list_db_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "connection_name": "list_db_main"} */
+
+            SELECT
+                'db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m15:08:30.073784 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:08:30.074783 [debug] [ThreadPool]: On list_db_main: ROLLBACK
+[0m15:08:30.074783 [debug] [ThreadPool]: On list_db_main: Close
+[0m15:08:30.076284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A96763400>]}
+[0m15:08:30.076784 [debug] [MainThread]: Using sqlite connection "master"
+[0m15:08:30.076784 [debug] [MainThread]: On master: BEGIN
+[0m15:08:30.076784 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:08:30.077788 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:08:30.077788 [debug] [MainThread]: On master: COMMIT
+[0m15:08:30.078292 [debug] [MainThread]: Using sqlite connection "master"
+[0m15:08:30.078292 [debug] [MainThread]: On master: COMMIT
+[0m15:08:30.078292 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:08:30.078791 [debug] [MainThread]: On master: Close
+[0m15:08:30.081291 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_customers
+[0m15:08:30.081791 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_customers ................................. [RUN]
+[0m15:08:30.082292 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.product_pipeline.stg_customers'
+[0m15:08:30.082796 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_customers
+[0m15:08:30.090303 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_customers"
+[0m15:08:30.090804 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_customers
+[0m15:08:30.107819 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m15:08:30.108324 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_customers"} */
+drop view if exists "main"."stg_customers"
+[0m15:08:30.108324 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:08:30.165024 [debug] [Thread-1 (]: SQL status: OK in 0.056 seconds
+[0m15:08:30.168536 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_customers"
+[0m15:08:30.169536 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m15:08:30.169536 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: BEGIN
+[0m15:08:30.170037 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:08:30.170037 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m15:08:30.170536 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_customers"} */
+
+    
+    create view main."stg_customers" as
+    select
+  customer_id,
+  customer_name,
+  country,
+  region
+from main."raw_dim_customers";
+[0m15:08:30.171537 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:08:30.176037 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: COMMIT
+[0m15:08:30.176540 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_customers"
+[0m15:08:30.177545 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: COMMIT
+[0m15:08:30.179793 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:08:30.182293 [debug] [Thread-1 (]: On model.product_pipeline.stg_customers: Close
+[0m15:08:30.184292 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A96BB0B20>]}
+[0m15:08:30.184794 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.10s]
+[0m15:08:30.185292 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_customers
+[0m15:08:30.185794 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_orders
+[0m15:08:30.186294 [info ] [Thread-1 (]: 2 of 7 START sql view model main.stg_orders .................................... [RUN]
+[0m15:08:30.186793 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.stg_customers, now model.product_pipeline.stg_orders)
+[0m15:08:30.186793 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_orders
+[0m15:08:30.189810 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_orders"
+[0m15:08:30.190810 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_orders
+[0m15:08:30.196810 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m15:08:30.196810 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_orders"} */
+drop view if exists "main"."stg_orders"
+[0m15:08:30.196810 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:30.201319 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:08:30.202320 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_orders"
+[0m15:08:30.203320 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m15:08:30.203820 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: BEGIN
+[0m15:08:30.203820 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:08:30.204319 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m15:08:30.204319 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_orders"} */
+
+    
+    create view main."stg_orders" as
+    select
+  order_id,
+  customer_id,
+  product_id,
+  date(order_date) as order_date,
+  quantity,
+  revenue,
+  cogs,
+  margin
+from main."raw_fact_orders";
+[0m15:08:30.205322 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.206323 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: COMMIT
+[0m15:08:30.206825 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_orders"
+[0m15:08:30.206825 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: COMMIT
+[0m15:08:30.208834 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.209836 [debug] [Thread-1 (]: On model.product_pipeline.stg_orders: Close
+[0m15:08:30.210335 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9ABF5F60>]}
+[0m15:08:30.211340 [info ] [Thread-1 (]: 2 of 7 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.02s]
+[0m15:08:30.211840 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_orders
+[0m15:08:30.212337 [debug] [Thread-1 (]: Began running node model.product_pipeline.stg_products
+[0m15:08:30.212337 [info ] [Thread-1 (]: 3 of 7 START sql view model main.stg_products .................................. [RUN]
+[0m15:08:30.212833 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.stg_orders, now model.product_pipeline.stg_products)
+[0m15:08:30.213332 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.stg_products
+[0m15:08:30.215332 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.stg_products"
+[0m15:08:30.216836 [debug] [Thread-1 (]: Began executing node model.product_pipeline.stg_products
+[0m15:08:30.220343 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m15:08:30.220843 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_products"} */
+drop view if exists "main"."stg_products"
+[0m15:08:30.220843 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:30.224344 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:08:30.225848 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.stg_products"
+[0m15:08:30.226348 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m15:08:30.226348 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: BEGIN
+[0m15:08:30.226348 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:08:30.227354 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m15:08:30.227354 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.stg_products"} */
+
+    
+    create view main."stg_products" as
+    select
+    product_id,
+    product_name,
+    brand,
+    category,
+    unit_cost,
+    unit_price
+from main."raw_dim_products";
+[0m15:08:30.228360 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.229366 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: COMMIT
+[0m15:08:30.229366 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.stg_products"
+[0m15:08:30.229867 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: COMMIT
+[0m15:08:30.231366 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.231867 [debug] [Thread-1 (]: On model.product_pipeline.stg_products: Close
+[0m15:08:30.232366 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9ABF4A00>]}
+[0m15:08:30.232867 [info ] [Thread-1 (]: 3 of 7 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.02s]
+[0m15:08:30.233367 [debug] [Thread-1 (]: Finished running node model.product_pipeline.stg_products
+[0m15:08:30.233867 [debug] [Thread-1 (]: Began running node model.product_pipeline.dim_customers
+[0m15:08:30.234369 [info ] [Thread-1 (]: 4 of 7 START sql view model main.dim_customers ................................. [RUN]
+[0m15:08:30.235366 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.stg_products, now model.product_pipeline.dim_customers)
+[0m15:08:30.235366 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.dim_customers
+[0m15:08:30.239381 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.dim_customers"
+[0m15:08:30.240378 [debug] [Thread-1 (]: Began executing node model.product_pipeline.dim_customers
+[0m15:08:30.242377 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.dim_customers"
+[0m15:08:30.243377 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.dim_customers"
+[0m15:08:30.243377 [debug] [Thread-1 (]: On model.product_pipeline.dim_customers: BEGIN
+[0m15:08:30.243877 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:30.244877 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.245379 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.dim_customers"
+[0m15:08:30.245379 [debug] [Thread-1 (]: On model.product_pipeline.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.dim_customers"} */
+
+    
+    create view main."dim_customers" as
+    SELECT DISTINCT
+    customer_id,
+    customer_name,
+    country,
+    region
+FROM main."stg_customers";
+[0m15:08:30.246379 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.247385 [debug] [Thread-1 (]: On model.product_pipeline.dim_customers: COMMIT
+[0m15:08:30.247385 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.dim_customers"
+[0m15:08:30.247891 [debug] [Thread-1 (]: On model.product_pipeline.dim_customers: COMMIT
+[0m15:08:30.250051 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:08:30.250551 [debug] [Thread-1 (]: On model.product_pipeline.dim_customers: Close
+[0m15:08:30.251051 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9967F670>]}
+[0m15:08:30.251551 [info ] [Thread-1 (]: 4 of 7 OK created sql view model main.dim_customers ............................ [[32mOK[0m in 0.02s]
+[0m15:08:30.252051 [debug] [Thread-1 (]: Finished running node model.product_pipeline.dim_customers
+[0m15:08:30.252552 [debug] [Thread-1 (]: Began running node model.product_pipeline.dim_products
+[0m15:08:30.253052 [info ] [Thread-1 (]: 5 of 7 START sql view model main.dim_products .................................. [RUN]
+[0m15:08:30.253552 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.dim_customers, now model.product_pipeline.dim_products)
+[0m15:08:30.254052 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.dim_products
+[0m15:08:30.256551 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.dim_products"
+[0m15:08:30.258057 [debug] [Thread-1 (]: Began executing node model.product_pipeline.dim_products
+[0m15:08:30.260076 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.dim_products"
+[0m15:08:30.260581 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.dim_products"
+[0m15:08:30.261083 [debug] [Thread-1 (]: On model.product_pipeline.dim_products: BEGIN
+[0m15:08:30.261580 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:30.262579 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.263079 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.dim_products"
+[0m15:08:30.263079 [debug] [Thread-1 (]: On model.product_pipeline.dim_products: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.dim_products"} */
+
+    
+    create view main."dim_products" as
+    SELECT DISTINCT
+    product_id,
+    product_name,
+    brand,
+    category
+FROM main."stg_products";
+[0m15:08:30.264080 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.264579 [debug] [Thread-1 (]: On model.product_pipeline.dim_products: COMMIT
+[0m15:08:30.265079 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.dim_products"
+[0m15:08:30.265079 [debug] [Thread-1 (]: On model.product_pipeline.dim_products: COMMIT
+[0m15:08:30.266772 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.266772 [debug] [Thread-1 (]: On model.product_pipeline.dim_products: Close
+[0m15:08:30.267777 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9AC15CC0>]}
+[0m15:08:30.268783 [info ] [Thread-1 (]: 5 of 7 OK created sql view model main.dim_products ............................. [[32mOK[0m in 0.01s]
+[0m15:08:30.269288 [debug] [Thread-1 (]: Finished running node model.product_pipeline.dim_products
+[0m15:08:30.269288 [debug] [Thread-1 (]: Began running node model.product_pipeline.int_orders_enriched
+[0m15:08:30.269787 [info ] [Thread-1 (]: 6 of 7 START sql view model main.int_orders_enriched ........................... [RUN]
+[0m15:08:30.270288 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.dim_products, now model.product_pipeline.int_orders_enriched)
+[0m15:08:30.270786 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.int_orders_enriched
+[0m15:08:30.273286 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.int_orders_enriched"
+[0m15:08:30.273786 [debug] [Thread-1 (]: Began executing node model.product_pipeline.int_orders_enriched
+[0m15:08:30.276786 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.int_orders_enriched"
+[0m15:08:30.276786 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.int_orders_enriched"} */
+drop view if exists "main"."int_orders_enriched"
+[0m15:08:30.276786 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:30.280302 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:08:30.281308 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.int_orders_enriched"
+[0m15:08:30.282308 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.int_orders_enriched"
+[0m15:08:30.282308 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: BEGIN
+[0m15:08:30.282808 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:08:30.282808 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.int_orders_enriched"
+[0m15:08:30.283308 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.int_orders_enriched"} */
+
+    
+    create view main."int_orders_enriched" as
+    WITH orders AS (
+    SELECT * FROM main."stg_orders"
+),
+products as (
+    SELECT * FROM main."stg_products"
+),
+customers as (
+    SELECT * FROM main."stg_customers"
+)
+
+SELECT
+    o.order_id,
+    o.order_date,
+    o.customer_id,
+    c.customer_name,
+    c.country,
+    c.region,
+    o.product_id,
+    p.product_name,
+    p.brand,
+    p.category,
+    o.quantity,
+    o.revenue,
+    o.cogs,
+    o.margin
+FROM orders o
+LEFT JOIN customers c ON o.customer_id = c.customer_id
+LEFT JOIN products p ON o.product_id = p.product_id;
+[0m15:08:30.283808 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:08:30.284814 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: COMMIT
+[0m15:08:30.284814 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.int_orders_enriched"
+[0m15:08:30.285313 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: COMMIT
+[0m15:08:30.286808 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.286808 [debug] [Thread-1 (]: On model.product_pipeline.int_orders_enriched: Close
+[0m15:08:30.287812 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9AC146A0>]}
+[0m15:08:30.288316 [info ] [Thread-1 (]: 6 of 7 OK created sql view model main.int_orders_enriched ...................... [[32mOK[0m in 0.02s]
+[0m15:08:30.288816 [debug] [Thread-1 (]: Finished running node model.product_pipeline.int_orders_enriched
+[0m15:08:30.289816 [debug] [Thread-1 (]: Began running node model.product_pipeline.fact_sales
+[0m15:08:30.290316 [info ] [Thread-1 (]: 7 of 7 START sql view model main.fact_sales .................................... [RUN]
+[0m15:08:30.290816 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.product_pipeline.int_orders_enriched, now model.product_pipeline.fact_sales)
+[0m15:08:30.290816 [debug] [Thread-1 (]: Began compiling node model.product_pipeline.fact_sales
+[0m15:08:30.293315 [debug] [Thread-1 (]: Writing injected SQL for node "model.product_pipeline.fact_sales"
+[0m15:08:30.293816 [debug] [Thread-1 (]: Began executing node model.product_pipeline.fact_sales
+[0m15:08:30.295815 [debug] [Thread-1 (]: Writing runtime sql for node "model.product_pipeline.fact_sales"
+[0m15:08:30.296815 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.fact_sales"
+[0m15:08:30.296815 [debug] [Thread-1 (]: On model.product_pipeline.fact_sales: BEGIN
+[0m15:08:30.296815 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:30.298322 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.298822 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.fact_sales"
+[0m15:08:30.298822 [debug] [Thread-1 (]: On model.product_pipeline.fact_sales: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "product_pipeline", "target_name": "dev", "node_id": "model.product_pipeline.fact_sales"} */
+
+    
+    create view main."fact_sales" as
+    WITH enriched AS (
+    SELECT * FROM main."int_orders_enriched"
+)
+
+SELECT
+    order_id,
+    order_date,
+    customer_id,
+    product_id,
+    brand,
+    category,
+    quantity,
+    revenue,
+    cogs,
+    margin
+FROM enriched;
+[0m15:08:30.300322 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.301322 [debug] [Thread-1 (]: On model.product_pipeline.fact_sales: COMMIT
+[0m15:08:30.301823 [debug] [Thread-1 (]: Using sqlite connection "model.product_pipeline.fact_sales"
+[0m15:08:30.301823 [debug] [Thread-1 (]: On model.product_pipeline.fact_sales: COMMIT
+[0m15:08:30.303227 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:08:30.303727 [debug] [Thread-1 (]: On model.product_pipeline.fact_sales: Close
+[0m15:08:30.304727 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '710827c1-0ac5-4cb6-ab2e-475db0efb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9AC3C160>]}
+[0m15:08:30.305227 [info ] [Thread-1 (]: 7 of 7 OK created sql view model main.fact_sales ............................... [[32mOK[0m in 0.01s]
+[0m15:08:30.305728 [debug] [Thread-1 (]: Finished running node model.product_pipeline.fact_sales
+[0m15:08:30.306726 [debug] [MainThread]: Using sqlite connection "master"
+[0m15:08:30.306726 [debug] [MainThread]: On master: BEGIN
+[0m15:08:30.306726 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:08:30.308236 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:08:30.308739 [debug] [MainThread]: On master: COMMIT
+[0m15:08:30.308739 [debug] [MainThread]: Using sqlite connection "master"
+[0m15:08:30.309239 [debug] [MainThread]: On master: COMMIT
+[0m15:08:30.309239 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:08:30.309239 [debug] [MainThread]: On master: Close
+[0m15:08:30.309739 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:08:30.309739 [debug] [MainThread]: Connection 'list_db' was properly closed.
+[0m15:08:30.310239 [debug] [MainThread]: Connection 'list_db_main' was properly closed.
+[0m15:08:30.310239 [debug] [MainThread]: Connection 'model.product_pipeline.fact_sales' was properly closed.
+[0m15:08:30.310736 [info ] [MainThread]: 
+[0m15:08:30.311236 [info ] [MainThread]: Finished running 7 view models in 0 hours 0 minutes and 0.30 seconds (0.30s).
+[0m15:08:30.312736 [debug] [MainThread]: Command end result
+[0m15:08:30.329253 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\manifest.json
+[0m15:08:30.331253 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\semantic_manifest.json
+[0m15:08:30.336759 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Documents\Professional Profile\Pipeline\analytics-engineering-product-pipeline\product_pipeline\target\run_results.json
+[0m15:08:30.336759 [info ] [MainThread]: 
+[0m15:08:30.337763 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:08:30.338269 [info ] [MainThread]: 
+[0m15:08:30.338769 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m15:08:30.339774 [debug] [MainThread]: Command `dbt run` succeeded at 15:08:30.339774 after 1.21 seconds
+[0m15:08:30.339774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A96E04D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A98046980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9ABDC8B0>]}
+[0m15:08:30.340272 [debug] [MainThread]: Flushing usage events
+[0m15:08:30.836535 [debug] [MainThread]: An error was encountered while trying to flush usage events

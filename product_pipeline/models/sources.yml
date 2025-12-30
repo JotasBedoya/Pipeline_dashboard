@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_dim_products
+      - name: raw_dim_customers
+      - name: raw_fact_orders
+      - name: raw_inventory_movements
+      - name: raw_product_reviews
